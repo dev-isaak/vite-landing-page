@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.root,
+#root,
+#docs-root {
+  --primary-color: #f1f6f9;
+  --secondary-color: #18ace1;
+  --button: #ed1a60;
+}
+
+body{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.1rem;
+  color: rgb(34, 34, 34);
+  overflow: visible;
+}
+
+.active{
+  color: var(--secondary-color);
+}
+.active ~ div{
+  display: block;
+}
+
+.mover{
+  transform: translateX(4rem) ;
+}
